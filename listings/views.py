@@ -5,9 +5,9 @@ from .models import Listing
 
 
 def index(request):
-    listings = Listing.objects.all()
+    listings = Listing.objects.all().order_by('id')
 
-    paginator = Paginator(listings, 3)
+    paginator = Paginator(listings, 3, orphans=0)
     page = request.GET.get('page')
     paged_listings = paginator.get_page(page)
 
