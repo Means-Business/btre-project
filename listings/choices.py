@@ -75,4 +75,5 @@ state_choices = {
     "WV": 'West Virginia',
     "WI": 'Wisconsin',
     "WY": 'Wyoming',
+    "Phuket": 'Phuket',
 }
